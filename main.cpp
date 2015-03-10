@@ -6,7 +6,7 @@
 #define NUM_INPUT 3
 #define NUM_HIDDEN 6
 #define NUM_OUTPUT 1
-#define EPSILON 0.02
+#define EPSILON 0.05
 #define THRESHOLD_ERROR 0.01
 
 int tx[NUM_SAMPLE][NUM_INPUT],ty[NUM_SAMPLE][NUM_OUTPUT];
@@ -30,7 +30,7 @@ int main(int argc, const char * argv[]) {
 		sigmoid_table[i] = (float)(1.0/(1.0 + exp((double)(i-50) * -0.2)));
 	}
 
-	streeam = fopen("//Users//nakamurashinnosuke//Documents//training.dat","r");
+	streeam = fopen("//Users//HOGE//training.dat","r");
 	if(streeam == NULL){
 		printf("ファイルをオープンできないでち\n");
 	}else{
